@@ -1,0 +1,81 @@
+{
+  "config": "{\"version\":\"5.59\",\"themeCollection\":{\"baseTheme\":{\"name\":\"CY24SU10\",\"version\":\"5.62\",\"type\":2}},\"activeSectionIndex\":1,\"defaultDrillFilterOtherVisuals\":true,\"settings\":{\"useNewFilterPaneExperience\":true,\"allowChangeFilterTypes\":true,\"useStylableVisualContainerHeader\":true,\"queryLimitOption\":6,\"useEnhancedTooltips\":true,\"exportDataMode\":1,\"useDefaultAggregateDisplayName\":true},\"objects\":{\"section\":[{\"properties\":{\"verticalAlignment\":{\"expr\":{\"Literal\":{\"Value\":\"'Top'\"}}}}}]}}",
+  "layoutOptimization": 0,
+  "resourcePackages": [
+    {
+      "resourcePackage": {
+        "disabled": false,
+        "items": [
+          {
+            "name": "CY24SU10",
+            "path": "BaseThemes/CY24SU10.json",
+            "type": 202
+          }
+        ],
+        "name": "SharedResources",
+        "type": 2
+      }
+    }
+  ],
+  "sections": [
+    {
+      "config": "{\"objects\":{\"outspacePane\":[{\"properties\":{\"width\":{\"expr\":{\"Literal\":{\"Value\":\"183L\"}}}}}]}}",
+      "displayName": "Page 1",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "51a08778452458d358ef",
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"41fa1db7c19db3da620b\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.343065693430656,\"y\":0,\"z\":0,\"width\":1270.6569343065692,\"height\":719.4160583941606,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"FACTS_STORE_SALES.SS_CUSTOMER_SK\"},{\"queryRef\":\"FACTS_STORE_SALES.SS_ITEM_SK\"},{\"queryRef\":\"FACTS_STORE_SALES.SS_STORE_SK\"},{\"queryRef\":\"Sum(FACTS_STORE_SALES.SS_QUANTITY)\"},{\"queryRef\":\"Sum(FACTS_STORE_SALES.SS_SALES_PRICE)\"},{\"queryRef\":\"Sum(FACTS_STORE_SALES.SS_NET_PROFIT)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FACTS_STORE_SALES\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SS_CUSTOMER_SK\"},\"Name\":\"FACTS_STORE_SALES.SS_CUSTOMER_SK\",\"NativeReferenceName\":\"SS_CUSTOMER_SK\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SS_ITEM_SK\"},\"Name\":\"FACTS_STORE_SALES.SS_ITEM_SK\",\"NativeReferenceName\":\"SS_ITEM_SK\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SS_STORE_SK\"},\"Name\":\"FACTS_STORE_SALES.SS_STORE_SK\",\"NativeReferenceName\":\"SS_STORE_SK\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SS_QUANTITY\"},\"Name\":\"Sum(FACTS_STORE_SALES.SS_QUANTITY)\",\"NativeReferenceName\":\"SS_QUANTITY\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SS_SALES_PRICE\"},\"Name\":\"Sum(FACTS_STORE_SALES.SS_SALES_PRICE)\",\"NativeReferenceName\":\"SS_SALES_PRICE\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SS_NET_PROFIT\"},\"Name\":\"Sum(FACTS_STORE_SALES.SS_NET_PROFIT)\",\"NativeReferenceName\":\"SS_NET_PROFIT\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[{\"name\":\"79627772525ba442be48\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"FACTS_STORE_SALES\"}},\"Property\":\"SS_CUSTOMER_SK\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FACTS_STORE_SALES\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SS_CUSTOMER_SK\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 719.42,
+          "width": 1270.66,
+          "x": 9.34,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"6f95341434e87f5c3a6e\",\"layouts\":[{\"id\":0,\"position\":{\"x\":0,\"y\":0,\"width\":100,\"height\":40,\"z\":1}}],\"singleVisual\":{\"visualType\":\"actionButton\",\"drillFilterOtherVisuals\":true,\"objects\":{\"icon\":[{\"properties\":{\"shapeType\":{\"expr\":{\"Literal\":{\"Value\":\"'back'\"}}}},\"selector\":{\"id\":\"default\"}}]},\"vcObjects\":{\"visualLink\":[{\"properties\":{\"show\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}},\"type\":{\"expr\":{\"Literal\":{\"Value\":\"'Back'\"}}}}}]}},\"howCreated\":\"InsertVisualButton\"}",
+          "filters": "[]",
+          "height": 40.00,
+          "width": 100.00,
+          "x": 0.00,
+          "y": 0.00,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    },
+    {
+      "config": "{}",
+      "displayName": "Page 2",
+      "displayOption": 1,
+      "filters": "[]",
+      "height": 720.00,
+      "name": "c775a7c8af32e5b376aa",
+      "ordinal": 1,
+      "visualContainers": [
+        {
+          "config": "{\"name\":\"573aeefe47371dbfd4f9\",\"layouts\":[{\"id\":0,\"position\":{\"x\":9.511677282377919,\"y\":0,\"z\":0,\"width\":701.1464968152866,\"height\":720.1698513800425,\"tabOrder\":0}}],\"singleVisual\":{\"visualType\":\"clusteredColumnChart\",\"projections\":{\"Y\":[{\"queryRef\":\"Sum(FACTS_STORE_SALES.SS_SALES_PRICE)\"}],\"Category\":[{\"queryRef\":\"DIM_STORE.S_STORE_NAME\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FACTS_STORE_SALES\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DIM_STORE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SS_SALES_PRICE\"}},\"Function\":0},\"Name\":\"Sum(FACTS_STORE_SALES.SS_SALES_PRICE)\",\"NativeReferenceName\":\"SS_SALES_PRICE\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"S_STORE_NAME\"},\"Name\":\"DIM_STORE.S_STORE_NAME\",\"NativeReferenceName\":\"S_STORE_NAME\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SS_SALES_PRICE\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"d7fdaa438fda41d06d78\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DIM_STORE\"}},\"Property\":\"S_STORE_NAME\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DIM_STORE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"S_STORE_NAME\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":0,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 720.17,
+          "width": 701.15,
+          "x": 9.51,
+          "y": 0.00,
+          "z": 0.00
+        },
+        {
+          "config": "{\"name\":\"eccc20187cf522577b43\",\"layouts\":[{\"id\":0,\"position\":{\"x\":721,\"y\":0,\"width\":559,\"height\":720,\"z\":1,\"tabOrder\":1}}],\"singleVisual\":{\"visualType\":\"pieChart\",\"projections\":{\"Category\":[{\"queryRef\":\"DIM_STORE.S_STATE\",\"active\":true}],\"Y\":[{\"queryRef\":\"Sum(FACTS_STORE_SALES.SS_SALES_PRICE)\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"f\",\"Entity\":\"FACTS_STORE_SALES\",\"Type\":0},{\"Name\":\"d\",\"Entity\":\"DIM_STORE\",\"Type\":0}],\"Select\":[{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SS_SALES_PRICE\"}},\"Function\":0},\"Name\":\"Sum(FACTS_STORE_SALES.SS_SALES_PRICE)\",\"NativeReferenceName\":\"Sum of SS_SALES_PRICE\"},{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"S_STATE\"},\"Name\":\"DIM_STORE.S_STATE\",\"NativeReferenceName\":\"S_STATE\"}],\"OrderBy\":[{\"Direction\":2,\"Expression\":{\"Aggregation\":{\"Expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"f\"}},\"Property\":\"SS_SALES_PRICE\"}},\"Function\":0}}}]},\"drillFilterOtherVisuals\":true,\"hasDefaultSort\":true}}",
+          "filters": "[{\"name\":\"c02b9b8a410822f7266a\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DIM_STORE\"}},\"Property\":\"S_COUNTRY\"}},\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DIM_STORE\",\"Type\":0}],\"Where\":[{\"Condition\":{\"Not\":{\"Expression\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"S_COUNTRY\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"null\"}}]]}}}}}]},\"type\":\"Categorical\",\"howCreated\":1,\"objects\":{\"general\":[{\"properties\":{\"isInvertedSelectionMode\":{\"expr\":{\"Literal\":{\"Value\":\"true\"}}}}}]},\"isHiddenInViewMode\":false}]",
+          "height": 720.00,
+          "width": 559.00,
+          "x": 721.00,
+          "y": 0.00,
+          "z": 1.00
+        }
+      ],
+      "width": 1280.00
+    }
+  ]
+}

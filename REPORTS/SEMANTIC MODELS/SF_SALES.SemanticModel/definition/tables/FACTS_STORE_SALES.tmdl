@@ -1,0 +1,292 @@
+table FACTS_STORE_SALES
+	lineageTag: 171a5ca4-80be-4ee5-9124-49addba61a01
+	sourceLineageTag: [dbo].[FACTS_STORE_SALES]
+
+	column SS_SOLD_DATE_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 099eb90b-2ce9-414c-935c-bea80540e2ac
+		sourceLineageTag: SS_SOLD_DATE_SK
+		summarizeBy: none
+		sourceColumn: SS_SOLD_DATE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_SOLD_TIME_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: c578372c-3052-4b64-9234-d8309c14307f
+		sourceLineageTag: SS_SOLD_TIME_SK
+		summarizeBy: sum
+		sourceColumn: SS_SOLD_TIME_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_ITEM_SK
+		dataType: double
+		formatString: 0
+		sourceProviderType: decimal(34, 6)
+		lineageTag: b29b1056-d749-440a-aefd-5d6847e56b42
+		sourceLineageTag: SS_ITEM_SK
+		summarizeBy: none
+		sourceColumn: SS_ITEM_SK
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+	column SS_CUSTOMER_SK
+		dataType: double
+		formatString: 0
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 068b4c96-eb6d-4a19-b96b-1dce208e76d8
+		sourceLineageTag: SS_CUSTOMER_SK
+		summarizeBy: none
+		sourceColumn: SS_CUSTOMER_SK
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+	column SS_CDEMO_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: c8f54dbb-9ccf-45c0-b0a7-dd278b1b3bfd
+		sourceLineageTag: SS_CDEMO_SK
+		summarizeBy: none
+		sourceColumn: SS_CDEMO_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_HDEMO_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 79a6cd15-6e5c-4734-a72a-36fff8e5f1f8
+		sourceLineageTag: SS_HDEMO_SK
+		summarizeBy: none
+		sourceColumn: SS_HDEMO_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_ADDR_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 9188a437-b1c4-458f-a502-1116fb961f2f
+		sourceLineageTag: SS_ADDR_SK
+		summarizeBy: none
+		sourceColumn: SS_ADDR_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_STORE_SK
+		dataType: double
+		formatString: 0
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 24ae48fe-f175-4cfe-9db6-862888620551
+		sourceLineageTag: SS_STORE_SK
+		summarizeBy: none
+		sourceColumn: SS_STORE_SK
+
+		changedProperty = FormatString
+
+		annotation SummarizationSetBy = Automatic
+
+	column SS_PROMO_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 3e92ae8a-545f-43fb-a33c-13f7eda1fc1a
+		sourceLineageTag: SS_PROMO_SK
+		summarizeBy: sum
+		sourceColumn: SS_PROMO_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_TICKET_NUMBER
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 6bb72517-51d2-4700-bcdd-05a169f01777
+		sourceLineageTag: SS_TICKET_NUMBER
+		summarizeBy: sum
+		sourceColumn: SS_TICKET_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_QUANTITY
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 53cb46dd-8063-4095-9702-786e88e77228
+		sourceLineageTag: SS_QUANTITY
+		summarizeBy: sum
+		sourceColumn: SS_QUANTITY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_WHOLESALE_COST
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 3b0d0f4c-7344-4338-9433-c205b9f0acc6
+		sourceLineageTag: SS_WHOLESALE_COST
+		summarizeBy: sum
+		sourceColumn: SS_WHOLESALE_COST
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_LIST_PRICE
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: f7dad4d0-a216-4e89-a009-d6e615bb4d86
+		sourceLineageTag: SS_LIST_PRICE
+		summarizeBy: sum
+		sourceColumn: SS_LIST_PRICE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_SALES_PRICE
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: ae19ec70-4d5c-4a3a-bf8d-52ccc7f467b0
+		sourceLineageTag: SS_SALES_PRICE
+		summarizeBy: sum
+		sourceColumn: SS_SALES_PRICE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_EXT_DISCOUNT_AMT
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 13798231-51cb-4e23-b393-5b1d7b41e0f3
+		sourceLineageTag: SS_EXT_DISCOUNT_AMT
+		summarizeBy: sum
+		sourceColumn: SS_EXT_DISCOUNT_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_EXT_SALES_PRICE
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: edbe4c39-c5fd-419d-a9a4-0fcebe086ebe
+		sourceLineageTag: SS_EXT_SALES_PRICE
+		summarizeBy: sum
+		sourceColumn: SS_EXT_SALES_PRICE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_EXT_WHOLESALE_COST
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: e253bbeb-01b8-4769-b8c4-5c2ddb33c2f6
+		sourceLineageTag: SS_EXT_WHOLESALE_COST
+		summarizeBy: sum
+		sourceColumn: SS_EXT_WHOLESALE_COST
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_EXT_LIST_PRICE
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: cab2a5b5-a012-45c0-949e-76f4b6e757a2
+		sourceLineageTag: SS_EXT_LIST_PRICE
+		summarizeBy: sum
+		sourceColumn: SS_EXT_LIST_PRICE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_EXT_TAX
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 853c29e9-8c0c-4eb4-886e-138d214af462
+		sourceLineageTag: SS_EXT_TAX
+		summarizeBy: sum
+		sourceColumn: SS_EXT_TAX
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_COUPON_AMT
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 15933b4e-9898-4e4b-ba66-2c67867ec85b
+		sourceLineageTag: SS_COUPON_AMT
+		summarizeBy: sum
+		sourceColumn: SS_COUPON_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_NET_PAID
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 94990976-6071-417d-9563-9e4c7f118105
+		sourceLineageTag: SS_NET_PAID
+		summarizeBy: count
+		sourceColumn: SS_NET_PAID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_NET_PAID_INC_TAX
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 00927f4e-4172-4435-90cb-3e61dc0fb2c8
+		sourceLineageTag: SS_NET_PAID_INC_TAX
+		summarizeBy: sum
+		sourceColumn: SS_NET_PAID_INC_TAX
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SS_NET_PROFIT
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: b1bda4b8-49bf-4e3d-9162-ec73c2fd843f
+		sourceLineageTag: SS_NET_PROFIT
+		summarizeBy: sum
+		sourceColumn: SS_NET_PROFIT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition FACTS_STORE_SALES = entity
+		mode: directLake
+		source
+			entityName: FACTS_STORE_SALES
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

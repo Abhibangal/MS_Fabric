@@ -1,0 +1,71 @@
+table DIM_HOUSEHOLD_DEMOGRAPHICS
+	lineageTag: 0a6324e0-2de8-4cbf-aaf5-53955424c445
+	sourceLineageTag: [dbo].[DIM_HOUSEHOLD_DEMOGRAPHICS]
+
+	column HD_DEMO_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: ffc4e28c-f901-47bf-9b2e-df49dec38554
+		sourceLineageTag: HD_DEMO_SK
+		summarizeBy: none
+		sourceColumn: HD_DEMO_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HD_INCOME_BAND_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: bee4e22e-d9d9-401e-9b11-60912bb4b401
+		sourceLineageTag: HD_INCOME_BAND_SK
+		summarizeBy: none
+		sourceColumn: HD_INCOME_BAND_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HD_BUY_POTENTIAL
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 05fb96de-2481-4ac9-a06b-cf932b5665cf
+		sourceLineageTag: HD_BUY_POTENTIAL
+		summarizeBy: none
+		sourceColumn: HD_BUY_POTENTIAL
+
+		annotation SummarizationSetBy = Automatic
+
+	column HD_DEP_COUNT
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: a90b8706-c74b-4d40-b2a8-de5203ca6ef1
+		sourceLineageTag: HD_DEP_COUNT
+		summarizeBy: none
+		sourceColumn: HD_DEP_COUNT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column HD_VEHICLE_COUNT
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: e7945042-6bcc-4f79-a97d-ba1c53160414
+		sourceLineageTag: HD_VEHICLE_COUNT
+		summarizeBy: none
+		sourceColumn: HD_VEHICLE_COUNT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition DIM_HOUSEHOLD_DEMOGRAPHICS = entity
+		mode: directLake
+		source
+			entityName: DIM_HOUSEHOLD_DEMOGRAPHICS
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

@@ -1,0 +1,147 @@
+table DIM_CUSTOMER_ADDRESS
+	lineageTag: b75f5b94-b081-4b4d-a799-80aea9ed7590
+	sourceLineageTag: [dbo].[DIM_CUSTOMER_ADDRESS]
+
+	column CA_ADDRESS_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 6730ffdf-9f44-473c-8dcf-032ada3a8903
+		sourceLineageTag: CA_ADDRESS_SK
+		summarizeBy: none
+		sourceColumn: CA_ADDRESS_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CA_ADDRESS_ID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5e00a425-8878-43e3-a4bd-8639c30d4ffd
+		sourceLineageTag: CA_ADDRESS_ID
+		summarizeBy: none
+		sourceColumn: CA_ADDRESS_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_STREET_NUMBER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 6c277d2e-a8e7-4642-ae85-9ce4dc9e983e
+		sourceLineageTag: CA_STREET_NUMBER
+		summarizeBy: none
+		sourceColumn: CA_STREET_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_STREET_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0b974eb6-500f-4c7c-a249-10b98adccd23
+		sourceLineageTag: CA_STREET_NAME
+		summarizeBy: none
+		sourceColumn: CA_STREET_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_STREET_TYPE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 71b085da-bd74-4517-8aec-d44e070fe3f6
+		sourceLineageTag: CA_STREET_TYPE
+		summarizeBy: none
+		sourceColumn: CA_STREET_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_SUITE_NUMBER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 22a6da04-61a7-423c-b278-ce3dc77610aa
+		sourceLineageTag: CA_SUITE_NUMBER
+		summarizeBy: none
+		sourceColumn: CA_SUITE_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_CITY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 733c5d4d-590d-480c-be73-e1f1ecd956c3
+		sourceLineageTag: CA_CITY
+		summarizeBy: none
+		sourceColumn: CA_CITY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_COUNTY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ed341a46-e559-4743-87d0-c54ef22fbc3a
+		sourceLineageTag: CA_COUNTY
+		summarizeBy: none
+		sourceColumn: CA_COUNTY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_STATE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 781296dd-5672-4b17-8d12-e4bc3e29c828
+		sourceLineageTag: CA_STATE
+		summarizeBy: none
+		sourceColumn: CA_STATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_ZIP
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8d6b71a8-46ae-4558-aa3b-e9aab18fefd9
+		sourceLineageTag: CA_ZIP
+		summarizeBy: none
+		sourceColumn: CA_ZIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_COUNTRY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e2ab4e37-7893-49e1-8392-eff3104fb8ec
+		sourceLineageTag: CA_COUNTRY
+		summarizeBy: none
+		sourceColumn: CA_COUNTRY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_GMT_OFFSET
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 8a2e13fb-baed-47af-b570-45553f34d92b
+		sourceLineageTag: CA_GMT_OFFSET
+		summarizeBy: none
+		sourceColumn: CA_GMT_OFFSET
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CA_LOCATION_TYPE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: abcf2587-19c5-4a32-a810-1a60f1876286
+		sourceLineageTag: CA_LOCATION_TYPE
+		summarizeBy: none
+		sourceColumn: CA_LOCATION_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_CUSTOMER_ADDRESS = entity
+		mode: directLake
+		source
+			entityName: DIM_CUSTOMER_ADDRESS
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

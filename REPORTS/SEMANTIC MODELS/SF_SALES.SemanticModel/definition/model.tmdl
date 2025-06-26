@@ -1,0 +1,30 @@
+model Model
+	culture: en-US
+	collation: Latin1_General_100_BIN2_UTF8
+	defaultPowerBIDataSourceVersion: powerBI_V3
+	sourceQueryCulture: en-US
+	dataAccessOptions
+		legacyRedirects
+		returnErrorValuesAsNull
+
+annotation __PBI_TimeIntelligenceEnabled = 0
+
+annotation PBIDesktopVersion = 2.141.7595.2 (Main)+144c0436e47b19c275deecac0f1d92b7673e4bd2
+
+annotation PBI_QueryOrder = ["DatabaseQuery"]
+
+annotation __PBIService_Versioning_SaveVersion = f7727b0b-5e26-4dea-b322-76efb7cca102
+
+annotation PBI_ProTooling = ["WebModelingEdit"]
+
+ref table FACTS_STORE_SALES
+ref table DIM_CUSTOMER
+ref table DIM_CUSTOMER_ADDRESS
+ref table DIM_DATE
+ref table DIM_ITEM
+ref table DIM_STORE
+ref table DIM_CUSTOMER_DEMOGRAPHICS
+ref table DIM_HOUSEHOLD_DEMOGRAPHICS
+
+ref cultureInfo en-US
+

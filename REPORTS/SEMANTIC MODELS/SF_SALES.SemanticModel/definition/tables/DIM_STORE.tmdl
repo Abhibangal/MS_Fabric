@@ -1,0 +1,323 @@
+table DIM_STORE
+	lineageTag: 99226f2a-116b-46fe-a69b-c78dc4ff9be7
+	sourceLineageTag: [dbo].[DIM_STORE]
+
+	column S_STORE_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 3fe8b931-b6fe-4fa7-8cd7-82122dc5f838
+		sourceLineageTag: S_STORE_SK
+		summarizeBy: none
+		sourceColumn: S_STORE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column S_STORE_ID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ca0b5143-cceb-4098-a850-d7c1827f8a86
+		sourceLineageTag: S_STORE_ID
+		summarizeBy: none
+		sourceColumn: S_STORE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_REC_START_DATE
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 62ebe41b-68fa-4790-b16c-33f31ca880a5
+		sourceLineageTag: S_REC_START_DATE
+		summarizeBy: none
+		sourceColumn: S_REC_START_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_REC_END_DATE
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 01d3cad1-4879-4217-be89-5f5ed33e9359
+		sourceLineageTag: S_REC_END_DATE
+		summarizeBy: none
+		sourceColumn: S_REC_END_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_CLOSED_DATE_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 87674f8e-7869-45f0-81d5-d2c055991693
+		sourceLineageTag: S_CLOSED_DATE_SK
+		summarizeBy: none
+		sourceColumn: S_CLOSED_DATE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column S_STORE_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4181ab2b-e541-4671-a6b3-2fed4b4f7009
+		sourceLineageTag: S_STORE_NAME
+		summarizeBy: none
+		sourceColumn: S_STORE_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_NUMBER_EMPLOYEES
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 3d7ea211-3eec-4b07-b79c-b942fa4413b8
+		sourceLineageTag: S_NUMBER_EMPLOYEES
+		summarizeBy: none
+		sourceColumn: S_NUMBER_EMPLOYEES
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column S_FLOOR_SPACE
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: d785876f-175e-4df6-9183-a939060602be
+		sourceLineageTag: S_FLOOR_SPACE
+		summarizeBy: none
+		sourceColumn: S_FLOOR_SPACE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column S_HOURS
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 436e4ec3-4e3e-41a3-94c9-806ce34d4605
+		sourceLineageTag: S_HOURS
+		summarizeBy: none
+		sourceColumn: S_HOURS
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_MANAGER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 13165a43-8538-46bd-9c95-4e97537052eb
+		sourceLineageTag: S_MANAGER
+		summarizeBy: none
+		sourceColumn: S_MANAGER
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_MARKET_ID
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 51f0a74d-0606-431e-80fa-4643d70356b7
+		sourceLineageTag: S_MARKET_ID
+		summarizeBy: none
+		sourceColumn: S_MARKET_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column S_GEOGRAPHY_CLASS
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3530c239-6d35-496b-a285-0102e9b920e9
+		sourceLineageTag: S_GEOGRAPHY_CLASS
+		summarizeBy: none
+		sourceColumn: S_GEOGRAPHY_CLASS
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_MARKET_DESC
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e4197854-32a6-40d3-9db3-ce76fde0a88c
+		sourceLineageTag: S_MARKET_DESC
+		summarizeBy: none
+		sourceColumn: S_MARKET_DESC
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_MARKET_MANAGER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8162194c-bf41-4c5c-97b0-30745222087d
+		sourceLineageTag: S_MARKET_MANAGER
+		summarizeBy: none
+		sourceColumn: S_MARKET_MANAGER
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_DIVISION_ID
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: b3e3c315-1380-4998-bee2-8d0d756dfb37
+		sourceLineageTag: S_DIVISION_ID
+		summarizeBy: none
+		sourceColumn: S_DIVISION_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column S_DIVISION_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 32818264-ceae-4f80-8959-90ad9152719b
+		sourceLineageTag: S_DIVISION_NAME
+		summarizeBy: none
+		sourceColumn: S_DIVISION_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_COMPANY_ID
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 3b2e954a-cd9d-406b-88fb-978aead3f584
+		sourceLineageTag: S_COMPANY_ID
+		summarizeBy: none
+		sourceColumn: S_COMPANY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column S_COMPANY_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3f96d50e-436a-41bc-b3a2-a166ddf29715
+		sourceLineageTag: S_COMPANY_NAME
+		summarizeBy: none
+		sourceColumn: S_COMPANY_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_STREET_NUMBER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9fe0f499-51c5-414a-90a1-bb5affc93956
+		sourceLineageTag: S_STREET_NUMBER
+		summarizeBy: none
+		sourceColumn: S_STREET_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_STREET_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 263f9235-56e1-4eba-ab15-2dadefa34511
+		sourceLineageTag: S_STREET_NAME
+		summarizeBy: none
+		sourceColumn: S_STREET_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_STREET_TYPE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9bd004b9-8252-455c-b85d-b7ba9920a57c
+		sourceLineageTag: S_STREET_TYPE
+		summarizeBy: none
+		sourceColumn: S_STREET_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_SUITE_NUMBER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: bcc07bfd-0577-4adc-93e0-4f51322748c2
+		sourceLineageTag: S_SUITE_NUMBER
+		summarizeBy: none
+		sourceColumn: S_SUITE_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_CITY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e643e93f-cfbc-48c3-96dd-e8172e02d697
+		sourceLineageTag: S_CITY
+		summarizeBy: none
+		sourceColumn: S_CITY
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_COUNTY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: deda5c01-ed50-4f90-b15f-7b68dfcc81ab
+		sourceLineageTag: S_COUNTY
+		summarizeBy: none
+		sourceColumn: S_COUNTY
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_STATE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 427502e1-529a-4b97-b40c-42631e3c316e
+		sourceLineageTag: S_STATE
+		summarizeBy: none
+		sourceColumn: S_STATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_ZIP
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3a78e0d4-a244-41df-a061-dc43bccb2e98
+		sourceLineageTag: S_ZIP
+		summarizeBy: none
+		sourceColumn: S_ZIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_COUNTRY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ca483ad1-8951-43c3-a1e5-8f7a711eb91b
+		sourceLineageTag: S_COUNTRY
+		summarizeBy: none
+		sourceColumn: S_COUNTRY
+
+		annotation SummarizationSetBy = Automatic
+
+	column S_GMT_OFFSET
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 5b0544e6-e680-474b-af01-be5e26a459c0
+		sourceLineageTag: S_GMT_OFFSET
+		summarizeBy: none
+		sourceColumn: S_GMT_OFFSET
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column S_TAX_PRECENTAGE
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 7ec09695-c016-4730-a739-835bc58bb34c
+		sourceLineageTag: S_TAX_PRECENTAGE
+		summarizeBy: none
+		sourceColumn: S_TAX_PRECENTAGE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition DIM_STORE = entity
+		mode: directLake
+		source
+			entityName: DIM_STORE
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

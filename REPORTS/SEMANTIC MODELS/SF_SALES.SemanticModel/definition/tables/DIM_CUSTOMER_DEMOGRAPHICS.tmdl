@@ -1,0 +1,113 @@
+table DIM_CUSTOMER_DEMOGRAPHICS
+	lineageTag: 7ab0549d-c1de-4149-91f8-c8f5b51aaaa6
+	sourceLineageTag: [dbo].[DIM_CUSTOMER_DEMOGRAPHICS]
+
+	column CD_DEMO_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 88268dad-60f3-4617-b11e-d51ba55477ab
+		sourceLineageTag: CD_DEMO_SK
+		summarizeBy: none
+		sourceColumn: CD_DEMO_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CD_GENDER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9aef7bb5-0eff-4f05-a063-d56579466ed0
+		sourceLineageTag: CD_GENDER
+		summarizeBy: none
+		sourceColumn: CD_GENDER
+
+		annotation SummarizationSetBy = Automatic
+
+	column CD_MARITAL_STATUS
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3ee4d02e-6e7d-469c-9701-bb1331503c88
+		sourceLineageTag: CD_MARITAL_STATUS
+		summarizeBy: none
+		sourceColumn: CD_MARITAL_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column CD_EDUCATION_STATUS
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2bb40fb3-44d0-4ba3-a367-15ba24775ee1
+		sourceLineageTag: CD_EDUCATION_STATUS
+		summarizeBy: none
+		sourceColumn: CD_EDUCATION_STATUS
+
+		annotation SummarizationSetBy = Automatic
+
+	column CD_PURCHASE_ESTIMATE
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: d663c2bb-c115-4b6f-9b57-481213af1be3
+		sourceLineageTag: CD_PURCHASE_ESTIMATE
+		summarizeBy: none
+		sourceColumn: CD_PURCHASE_ESTIMATE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CD_CREDIT_RATING
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4d0f02a7-ddcb-4b27-a062-433bf3e91e61
+		sourceLineageTag: CD_CREDIT_RATING
+		summarizeBy: none
+		sourceColumn: CD_CREDIT_RATING
+
+		annotation SummarizationSetBy = Automatic
+
+	column CD_DEP_COUNT
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 1ba4c37c-9e25-4a1e-8135-42d655f8c9e8
+		sourceLineageTag: CD_DEP_COUNT
+		summarizeBy: none
+		sourceColumn: CD_DEP_COUNT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CD_DEP_EMPLOYED_COUNT
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: f569ba77-fa83-4fb3-9a70-c39bb2e6e0ec
+		sourceLineageTag: CD_DEP_EMPLOYED_COUNT
+		summarizeBy: none
+		sourceColumn: CD_DEP_EMPLOYED_COUNT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CD_DEP_COLLEGE_COUNT
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: b3a4d881-9dbd-40f9-8e47-56d9e0637ff3
+		sourceLineageTag: CD_DEP_COLLEGE_COUNT
+		summarizeBy: none
+		sourceColumn: CD_DEP_COLLEGE_COUNT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition DIM_CUSTOMER_DEMOGRAPHICS = entity
+		mode: directLake
+		source
+			entityName: DIM_CUSTOMER_DEMOGRAPHICS
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

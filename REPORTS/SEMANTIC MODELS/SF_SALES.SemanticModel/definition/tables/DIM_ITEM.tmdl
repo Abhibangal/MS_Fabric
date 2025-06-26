@@ -1,0 +1,251 @@
+table DIM_ITEM
+	lineageTag: 111f62f4-9c90-4359-aad0-06a1bd8c6f71
+	sourceLineageTag: [dbo].[DIM_ITEM]
+
+	column I_ITEM_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 2ba36566-5dae-48e1-9bb4-30481ba10f7d
+		sourceLineageTag: I_ITEM_SK
+		summarizeBy: none
+		sourceColumn: I_ITEM_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column I_ITEM_ID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8178d122-67c7-4d62-8d49-1391eb8247ec
+		sourceLineageTag: I_ITEM_ID
+		summarizeBy: none
+		sourceColumn: I_ITEM_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_REC_START_DATE
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 9dae342f-cae8-4e8e-b265-9a586623ec4f
+		sourceLineageTag: I_REC_START_DATE
+		summarizeBy: none
+		sourceColumn: I_REC_START_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_REC_END_DATE
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 2fb242ea-e252-445e-bee2-f63edba2d1f4
+		sourceLineageTag: I_REC_END_DATE
+		summarizeBy: none
+		sourceColumn: I_REC_END_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_ITEM_DESC
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: da589221-1e2c-4ff9-bf9c-92586ebc48c1
+		sourceLineageTag: I_ITEM_DESC
+		summarizeBy: none
+		sourceColumn: I_ITEM_DESC
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_CURRENT_PRICE
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: b7e69470-f113-4c33-b2af-53739354fd69
+		sourceLineageTag: I_CURRENT_PRICE
+		summarizeBy: none
+		sourceColumn: I_CURRENT_PRICE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column I_WHOLESALE_COST
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: cf1b87d1-cd0b-4435-a3d6-992a99d13a8f
+		sourceLineageTag: I_WHOLESALE_COST
+		summarizeBy: none
+		sourceColumn: I_WHOLESALE_COST
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column I_BRAND_ID
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 4705e621-6086-4e26-b98b-1ab9c8a660e3
+		sourceLineageTag: I_BRAND_ID
+		summarizeBy: none
+		sourceColumn: I_BRAND_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column I_BRAND
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: fe96b05c-f951-4b20-98da-cd0f00bf89c5
+		sourceLineageTag: I_BRAND
+		summarizeBy: none
+		sourceColumn: I_BRAND
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_CLASS_ID
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 701bd1e3-7757-4f40-af4d-231f1fc0d295
+		sourceLineageTag: I_CLASS_ID
+		summarizeBy: none
+		sourceColumn: I_CLASS_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column I_CLASS
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 84835136-c4d9-49cc-8708-fd40d32e3b07
+		sourceLineageTag: I_CLASS
+		summarizeBy: none
+		sourceColumn: I_CLASS
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_CATEGORY_ID
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 61d0f5ec-a618-45e6-9d09-d093e95443ab
+		sourceLineageTag: I_CATEGORY_ID
+		summarizeBy: none
+		sourceColumn: I_CATEGORY_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column I_CATEGORY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c88d8179-f047-4a07-8ff1-c0c3175c8303
+		sourceLineageTag: I_CATEGORY
+		summarizeBy: none
+		sourceColumn: I_CATEGORY
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_MANUFACT_ID
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 419b21ab-811d-4104-ab7e-5fd242f17a81
+		sourceLineageTag: I_MANUFACT_ID
+		summarizeBy: none
+		sourceColumn: I_MANUFACT_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column I_MANUFACT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 404a5130-a246-4235-bce9-459b53911158
+		sourceLineageTag: I_MANUFACT
+		summarizeBy: none
+		sourceColumn: I_MANUFACT
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_SIZE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c9148d6d-9ddb-4d78-a857-c9c8ea588136
+		sourceLineageTag: I_SIZE
+		summarizeBy: none
+		sourceColumn: I_SIZE
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_FORMULATION
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 58bbd0cb-90ec-44df-8e08-d489182407ce
+		sourceLineageTag: I_FORMULATION
+		summarizeBy: none
+		sourceColumn: I_FORMULATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_COLOR
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c470454c-2d6d-4338-91a5-ac95f09d4f01
+		sourceLineageTag: I_COLOR
+		summarizeBy: none
+		sourceColumn: I_COLOR
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_UNITS
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 86d0398c-8121-40d3-8738-22e06386364a
+		sourceLineageTag: I_UNITS
+		summarizeBy: none
+		sourceColumn: I_UNITS
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_CONTAINER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 59bc756d-dee3-4c11-898d-b03fa14b61cb
+		sourceLineageTag: I_CONTAINER
+		summarizeBy: none
+		sourceColumn: I_CONTAINER
+
+		annotation SummarizationSetBy = Automatic
+
+	column I_MANAGER_ID
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 35a1e558-ec30-4654-b87c-438592273fe6
+		sourceLineageTag: I_MANAGER_ID
+		summarizeBy: none
+		sourceColumn: I_MANAGER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column I_PRODUCT_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3f035923-8ea7-42a5-9ea2-2654723c4554
+		sourceLineageTag: I_PRODUCT_NAME
+		summarizeBy: none
+		sourceColumn: I_PRODUCT_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_ITEM = entity
+		mode: directLake
+		source
+			entityName: DIM_ITEM
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

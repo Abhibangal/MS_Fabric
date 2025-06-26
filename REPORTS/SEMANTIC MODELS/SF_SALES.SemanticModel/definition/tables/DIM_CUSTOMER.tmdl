@@ -1,0 +1,211 @@
+table DIM_CUSTOMER
+	lineageTag: 232e255d-d418-480c-ab54-34788cc793ab
+	sourceLineageTag: [dbo].[DIM_CUSTOMER]
+
+	column C_CUSTOMER_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 47e7e1e7-4414-4c77-88f3-2ef75cbde111
+		sourceLineageTag: C_CUSTOMER_SK
+		summarizeBy: none
+		sourceColumn: C_CUSTOMER_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column C_CUSTOMER_ID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: d7e186f8-b062-4447-9c83-2eb799c90b2e
+		sourceLineageTag: C_CUSTOMER_ID
+		summarizeBy: none
+		sourceColumn: C_CUSTOMER_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column C_CURRENT_CDEMO_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 212df326-a00d-4fae-9f27-486248549032
+		sourceLineageTag: C_CURRENT_CDEMO_SK
+		summarizeBy: sum
+		sourceColumn: C_CURRENT_CDEMO_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column C_CURRENT_HDEMO_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 00348ba1-413e-4e3c-842e-fe3f49d20f51
+		sourceLineageTag: C_CURRENT_HDEMO_SK
+		summarizeBy: sum
+		sourceColumn: C_CURRENT_HDEMO_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column C_CURRENT_ADDR_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: eb12a203-db5a-4e68-be6a-b6f518bc68d7
+		sourceLineageTag: C_CURRENT_ADDR_SK
+		summarizeBy: sum
+		sourceColumn: C_CURRENT_ADDR_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column C_FIRST_SHIPTO_DATE_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 7fbd74ce-663b-4872-80bf-68dd8c269261
+		sourceLineageTag: C_FIRST_SHIPTO_DATE_SK
+		summarizeBy: sum
+		sourceColumn: C_FIRST_SHIPTO_DATE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column C_FIRST_SALES_DATE_SK
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 4d01eaca-39f0-4269-8ed8-834e02a93702
+		sourceLineageTag: C_FIRST_SALES_DATE_SK
+		summarizeBy: sum
+		sourceColumn: C_FIRST_SALES_DATE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column C_SALUTATION
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: caca069b-4df0-425c-a637-2fdb50eaa1cf
+		sourceLineageTag: C_SALUTATION
+		summarizeBy: none
+		sourceColumn: C_SALUTATION
+
+		annotation SummarizationSetBy = Automatic
+
+	column C_FIRST_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 411e243b-a8ad-4e32-9be4-9e23eb0b9e5c
+		sourceLineageTag: C_FIRST_NAME
+		summarizeBy: none
+		sourceColumn: C_FIRST_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column C_LAST_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ae9c8691-5596-4780-a0b0-a513200945b7
+		sourceLineageTag: C_LAST_NAME
+		summarizeBy: none
+		sourceColumn: C_LAST_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column C_PREFERRED_CUST_FLAG
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8f1912e7-11ab-4f84-b874-0e152973c771
+		sourceLineageTag: C_PREFERRED_CUST_FLAG
+		summarizeBy: none
+		sourceColumn: C_PREFERRED_CUST_FLAG
+
+		annotation SummarizationSetBy = Automatic
+
+	column C_BIRTH_DAY
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: 9e28693d-46d4-4a56-bbbb-49b159ad8585
+		sourceLineageTag: C_BIRTH_DAY
+		summarizeBy: sum
+		sourceColumn: C_BIRTH_DAY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column C_BIRTH_MONTH
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: e946dd83-f770-4fe4-8233-6c95ff2bf231
+		sourceLineageTag: C_BIRTH_MONTH
+		summarizeBy: sum
+		sourceColumn: C_BIRTH_MONTH
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column C_BIRTH_YEAR
+		dataType: double
+		sourceProviderType: decimal(34, 6)
+		lineageTag: be4598bb-fa78-4565-a5d7-2813f843dac0
+		sourceLineageTag: C_BIRTH_YEAR
+		summarizeBy: sum
+		sourceColumn: C_BIRTH_YEAR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column C_BIRTH_COUNTRY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b2025699-7ea9-4a4e-ad7a-a0d064a0d8f8
+		sourceLineageTag: C_BIRTH_COUNTRY
+		summarizeBy: none
+		sourceColumn: C_BIRTH_COUNTRY
+
+		annotation SummarizationSetBy = Automatic
+
+	column C_LOGIN
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ee7b12b6-a18b-4195-92bb-fe0a45f3605a
+		sourceLineageTag: C_LOGIN
+		summarizeBy: none
+		sourceColumn: C_LOGIN
+
+		annotation SummarizationSetBy = Automatic
+
+	column C_EMAIL_ADDRESS
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 059123dd-f956-4f78-a7d5-9bcf873dd6b7
+		sourceLineageTag: C_EMAIL_ADDRESS
+		summarizeBy: none
+		sourceColumn: C_EMAIL_ADDRESS
+
+		annotation SummarizationSetBy = Automatic
+
+	column C_LAST_REVIEW_DATE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 65a1b3fa-d7ae-4edf-b11f-d746e187079c
+		sourceLineageTag: C_LAST_REVIEW_DATE
+		summarizeBy: none
+		sourceColumn: C_LAST_REVIEW_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition DIM_CUSTOMER = entity
+		mode: directLake
+		source
+			entityName: DIM_CUSTOMER
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

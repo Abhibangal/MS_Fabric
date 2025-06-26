@@ -1,0 +1,44 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowFastCopy": false
+  },
+  "name": "Sales_Fact",
+  "queryGroups": [],
+  "documentLocale": "en-GB",
+  "queriesMetadata": {
+    "FACTS_STORE_SALES": {
+      "queryId": "7e4e0049-81af-413d-ba3f-374be8c3e246",
+      "queryName": "FACTS_STORE_SALES",
+      "loadEnabled": false
+    },
+    "FACTS_STORE_SALES_DataDestination": {
+      "queryId": "03908c84-d5f8-4adb-845e-55b11315cb03",
+      "queryName": "FACTS_STORE_SALES_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    },
+    "Database": {
+      "queryId": "557c4a37-403d-404f-8413-8c6147cab341",
+      "queryName": "Database",
+      "loadEnabled": false
+    },
+    "Role": {
+      "queryId": "8c79fc0f-c26a-4481-920d-76f7ca338d16",
+      "queryName": "Role",
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "wegdzrr-lp32993.snowflakecomputing.com;compute_wh",
+      "kind": "Snowflake",
+      "connectionId": "{\"ClusterId\":\"77e47124-7474-4fe8-8f31-8604a39397f5\",\"DatasourceId\":\"05813bc4-ce6d-4b32-9dc6-0de71991e5dd\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"77e47124-7474-4fe8-8f31-8604a39397f5\",\"DatasourceId\":\"c89a9123-1415-4740-8edf-5871af169a04\"}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowFastCopy": false
+  },
+  "name": "Dim_Customer_Address",
+  "queryGroups": [],
+  "documentLocale": "en-GB",
+  "queriesMetadata": {
+    "DIM_CUSTOMER_ADDRESS": {
+      "queryId": "5b395ac0-20b2-48b9-8771-93615bbad3e3",
+      "queryName": "DIM_CUSTOMER_ADDRESS",
+      "loadEnabled": false
+    },
+    "DIM_CUSTOMER_ADDRESS_DataDestination": {
+      "queryId": "27b0971d-8529-4590-94d3-ef30c7c4a361",
+      "queryName": "DIM_CUSTOMER_ADDRESS_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "wegdzrr-lp32993.snowflakecomputing.com;compute_wh",
+      "kind": "Snowflake",
+      "connectionId": "{\"ClusterId\":\"77e47124-7474-4fe8-8f31-8604a39397f5\",\"DatasourceId\":\"05813bc4-ce6d-4b32-9dc6-0de71991e5dd\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"77e47124-7474-4fe8-8f31-8604a39397f5\",\"DatasourceId\":\"c89a9123-1415-4740-8edf-5871af169a04\"}"
+    }
+  ]
+}

@@ -1,0 +1,34 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {
+    "allowFastCopy": false
+  },
+  "name": "Dim_Household_Demographics",
+  "queryGroups": [],
+  "documentLocale": "en-GB",
+  "queriesMetadata": {
+    "DIM_HOUSEHOLD_DEMOGRAPHICS": {
+      "queryId": "440d0753-fb2e-4b2a-bd90-0861a2cea628",
+      "queryName": "DIM_HOUSEHOLD_DEMOGRAPHICS",
+      "loadEnabled": false
+    },
+    "DIM_HOUSEHOLD_DEMOGRAPHICS_DataDestination": {
+      "queryId": "6102900b-f441-4dd3-b2d3-852c39fd5e86",
+      "queryName": "DIM_HOUSEHOLD_DEMOGRAPHICS_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "wegdzrr-lp32993.snowflakecomputing.com;compute_wh",
+      "kind": "Snowflake",
+      "connectionId": "{\"ClusterId\":\"77e47124-7474-4fe8-8f31-8604a39397f5\",\"DatasourceId\":\"05813bc4-ce6d-4b32-9dc6-0de71991e5dd\"}"
+    },
+    {
+      "path": "Lakehouse",
+      "kind": "Lakehouse",
+      "connectionId": "{\"ClusterId\":\"77e47124-7474-4fe8-8f31-8604a39397f5\",\"DatasourceId\":\"c89a9123-1415-4740-8edf-5871af169a04\"}"
+    }
+  ]
+}
