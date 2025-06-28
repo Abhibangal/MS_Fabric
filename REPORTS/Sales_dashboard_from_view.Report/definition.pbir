@@ -3,7 +3,7 @@
   "version": "4.0",
   "datasetReference": {
     "byPath": {
-      "path": "../../vw_based_sales_dashboard.SemanticModel"
+      "path": "../../SEMANTIC MODELS/vw_based_sales_dashboard.SemanticModel"
     }
   }
 }

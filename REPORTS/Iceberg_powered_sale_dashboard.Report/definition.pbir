@@ -3,7 +3,7 @@
   "version": "4.0",
   "datasetReference": {
     "byPath": {
-      "path": "../../Sales_Dashboard.SemanticModel"
+      "path": "../../SEMANTIC MODELS/Sales_Dashboard.SemanticModel"
     }
   }
 }
