@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "Iceberg_powered_sale_dashboard"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "76c64a0a-4cf6-8127-4727-17f4653ff61b"
+  }
+}

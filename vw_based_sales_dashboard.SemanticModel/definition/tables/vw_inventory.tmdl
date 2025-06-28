@@ -1,0 +1,61 @@
+table vw_inventory
+	lineageTag: be9bd45a-ce70-4c7b-b064-e43033191e44
+	sourceLineageTag: [dbo].[vw_inventory]
+
+	column INV_DATE_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 1f2dd1d5-e695-470b-bbbd-00ef1c46d30b
+		sourceLineageTag: INV_DATE_SK
+		summarizeBy: sum
+		sourceColumn: INV_DATE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column INV_ITEM_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: bd29d11e-64a8-47d4-a4c8-84a1c621c575
+		sourceLineageTag: INV_ITEM_SK
+		summarizeBy: none
+		sourceColumn: INV_ITEM_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column INV_WAREHOUSE_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: f321684d-c440-462f-8661-2248b7babd6b
+		sourceLineageTag: INV_WAREHOUSE_SK
+		summarizeBy: sum
+		sourceColumn: INV_WAREHOUSE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column INV_QUANTITY_ON_HAND
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 453d6c45-9c7b-469e-8d84-97641cb3cc7a
+		sourceLineageTag: INV_QUANTITY_ON_HAND
+		summarizeBy: sum
+		sourceColumn: INV_QUANTITY_ON_HAND
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	partition vw_inventory = entity
+		mode: directLake
+		source
+			entityName: vw_inventory
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

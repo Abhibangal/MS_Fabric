@@ -1,0 +1,230 @@
+[
+  {
+    "name": "TIME_DIM",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/TIME_DIM.gXPSOCSU"
+      }
+    }
+  },
+  {
+    "name": "STORE_SALES",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/STORE_SALES.06XB4IaF"
+      }
+    }
+  },
+  {
+    "name": "STORE_RETURNS",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/STORE_RETURNS.8NM2f3B1"
+      }
+    }
+  },
+  {
+    "name": "STORE",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/STORE.Vz67BqQh"
+      }
+    }
+  },
+  {
+    "name": "SHIP_MODE",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/SHIP_MODE.TVp6Z7PW"
+      }
+    }
+  },
+  {
+    "name": "REASON",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/REASON.Sm5ZAWhq"
+      }
+    }
+  },
+  {
+    "name": "PROMOTION",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/PROMOTION.8rvdfI3C"
+      }
+    }
+  },
+  {
+    "name": "ITEM",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/ITEM.oT698Ty4"
+      }
+    }
+  },
+  {
+    "name": "INVENTORY",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/INVENTORY.3rdeIycH"
+      }
+    }
+  },
+  {
+    "name": "INCOME_BAND",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/INCOME_BAND.wQfeiMbA"
+      }
+    }
+  },
+  {
+    "name": "HOUSEHOLD_DEMOGRAPHICS",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/HOUSEHOLD_DEMOGRAPHICS.SeJZgjjR"
+      }
+    }
+  },
+  {
+    "name": "DATE_DIM",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/DATE_DIM.nK3YktyD"
+      }
+    }
+  },
+  {
+    "name": "CUSTOMER_DEMOGRAPHICS",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/CUSTOMER_DEMOGRAPHICS.yipsXhyL"
+      }
+    }
+  },
+  {
+    "name": "CUSTOMER_ADDRESS",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/CUSTOMER_ADDRESS.ve8I1Lqn"
+      }
+    }
+  },
+  {
+    "name": "CUSTOMER",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/CUSTOMER.xT9egctA"
+      }
+    }
+  },
+  {
+    "name": "CATALOG_SALES",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/CATALOG_SALES.ikyMylBL"
+      }
+    }
+  },
+  {
+    "name": "CATALOG_RETURNS",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/CATALOG_RETURNS.DIFHvBGN"
+      }
+    }
+  },
+  {
+    "name": "CATALOG_PAGE",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/CATALOG_PAGE.Jn8HXeiS"
+      }
+    }
+  },
+  {
+    "name": "call_center",
+    "path": "/Tables",
+    "target": {
+      "type": "AdlsGen2",
+      "adlsGen2": {
+        "connectionId": "8ca47d17-d0a8-498d-8bc1-217ea0f9ec7e",
+        "location": "https://abhiiceberg.dfs.core.windows.net",
+        "subpath": "/icebergtables/call_center.s965bM7S"
+      }
+    }
+  }
+]

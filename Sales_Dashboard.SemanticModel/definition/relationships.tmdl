@@ -1,0 +1,22 @@
+relationship da2b8951-a0b0-3e06-9185-48af4c57cb60
+	fromColumn: CATALOG_SALES.CS_BILL_CUSTOMER_SK
+	toColumn: CUSTOMER.C_CUSTOMER_SK
+
+relationship ea2fa411-3af6-7c66-3ac5-85d95d6a35c6
+	fromColumn: CATALOG_SALES.CS_ITEM_SK
+	toColumn: ITEM.I_ITEM_SK
+
+relationship db4b9aba-aa9c-bc8d-8699-e3c34974b16c
+	fromColumn: CATALOG_SALES.CS_SOLD_DATE_SK
+	toColumn: DATE_DIM.D_DATE_SK
+
+relationship 7edbaeb0-f761-908e-f3b3-9b491f9d86a1
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: ITEM.I_ITEM_SK
+	toColumn: INVENTORY.INV_ITEM_SK
+
+relationship 1cd25a5e-30ef-8b1c-863b-981a3b8e526e
+	fromColumn: CATALOG_SALES.CS_SHIP_MODE_SK
+	toColumn: SHIP_MODE.SM_SHIP_MODE_SK
+

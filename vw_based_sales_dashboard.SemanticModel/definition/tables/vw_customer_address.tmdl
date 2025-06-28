@@ -1,0 +1,148 @@
+table vw_customer_address
+	lineageTag: 552c7074-a9a8-40f0-b135-ccc9d80e130b
+	sourceLineageTag: [dbo].[vw_customer_address]
+
+	column CA_ADDRESS_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: a55ed765-31db-4668-8b88-a724faa7f360
+		sourceLineageTag: CA_ADDRESS_SK
+		summarizeBy: none
+		sourceColumn: CA_ADDRESS_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CA_ADDRESS_ID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 970281cd-b5d9-49b2-a023-69cf1cefb778
+		sourceLineageTag: CA_ADDRESS_ID
+		summarizeBy: none
+		sourceColumn: CA_ADDRESS_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_STREET_NUMBER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: b0d9e477-2de3-4f9e-af81-8d987bdad4d4
+		sourceLineageTag: CA_STREET_NUMBER
+		summarizeBy: none
+		sourceColumn: CA_STREET_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_STREET_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 5ec674ba-cd1c-4469-9d1a-4281554004eb
+		sourceLineageTag: CA_STREET_NAME
+		summarizeBy: none
+		sourceColumn: CA_STREET_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_STREET_TYPE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 8483c7c7-b9fb-4632-b552-34f60774a577
+		sourceLineageTag: CA_STREET_TYPE
+		summarizeBy: none
+		sourceColumn: CA_STREET_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_SUITE_NUMBER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 78435ac4-31b1-4e5e-8849-14325f1ef18d
+		sourceLineageTag: CA_SUITE_NUMBER
+		summarizeBy: none
+		sourceColumn: CA_SUITE_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_CITY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 203c3946-35c6-430f-9df6-31cd1ee64a2c
+		sourceLineageTag: CA_CITY
+		summarizeBy: none
+		sourceColumn: CA_CITY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_COUNTY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 05930a59-69c9-4057-a2fe-903aed1b4d90
+		sourceLineageTag: CA_COUNTY
+		summarizeBy: none
+		sourceColumn: CA_COUNTY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_STATE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 9a343452-f69d-4f89-9c47-fbd536a8523e
+		sourceLineageTag: CA_STATE
+		summarizeBy: none
+		sourceColumn: CA_STATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_ZIP
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: ccb0dbd1-b7d2-4647-874f-27398a4011fc
+		sourceLineageTag: CA_ZIP
+		summarizeBy: none
+		sourceColumn: CA_ZIP
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_COUNTRY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: e1d3011c-ad73-4c11-987d-39ea3f5f3e54
+		sourceLineageTag: CA_COUNTRY
+		summarizeBy: none
+		sourceColumn: CA_COUNTRY
+
+		annotation SummarizationSetBy = Automatic
+
+	column CA_GMT_OFFSET
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(5, 2)
+		lineageTag: b4dc5711-08bc-4c07-842c-5ed8b48b6ad5
+		sourceLineageTag: CA_GMT_OFFSET
+		summarizeBy: sum
+		sourceColumn: CA_GMT_OFFSET
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CA_LOCATION_TYPE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: a5f047c9-88f1-4ee7-9381-09cc7a7eb726
+		sourceLineageTag: CA_LOCATION_TYPE
+		summarizeBy: none
+		sourceColumn: CA_LOCATION_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_customer_address = entity
+		mode: directLake
+		source
+			entityName: vw_customer_address
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

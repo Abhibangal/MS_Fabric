@@ -1,0 +1,328 @@
+table vw_date_dim
+	lineageTag: 32913d78-b728-4238-b2b7-4d7611e726c7
+	sourceLineageTag: [dbo].[vw_date_dim]
+
+	column D_DATE_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 1dff2564-427c-4b69-8c9a-8466e3b9be3c
+		sourceLineageTag: D_DATE_SK
+		summarizeBy: none
+		sourceColumn: D_DATE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_DATE_ID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 23309453-fe6a-413d-a9b7-6ed2d1a4bf3c
+		sourceLineageTag: D_DATE_ID
+		summarizeBy: none
+		sourceColumn: D_DATE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_DATE
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: date
+		lineageTag: 93487dfd-0f6b-4279-9519-305cfbf788a6
+		sourceLineageTag: D_DATE
+		summarizeBy: none
+		sourceColumn: D_DATE
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_MONTH_SEQ
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 490976a5-339b-4601-906c-2ae01f9578c9
+		sourceLineageTag: D_MONTH_SEQ
+		summarizeBy: none
+		sourceColumn: D_MONTH_SEQ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_WEEK_SEQ
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: e139279d-3f76-4f06-a350-342bbd075e8a
+		sourceLineageTag: D_WEEK_SEQ
+		summarizeBy: none
+		sourceColumn: D_WEEK_SEQ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_QUARTER_SEQ
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: fd178e22-417f-4e35-99bf-e05f35f8a5b9
+		sourceLineageTag: D_QUARTER_SEQ
+		summarizeBy: none
+		sourceColumn: D_QUARTER_SEQ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_YEAR
+		dataType: int64
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 7441a29b-5a02-4b69-b399-d36ac6fe5262
+		sourceLineageTag: D_YEAR
+		summarizeBy: none
+		sourceColumn: D_YEAR
+
+		changedProperty = DataType
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_DOW
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: ca5df6c7-f859-493c-a75e-10cdac0a884d
+		sourceLineageTag: D_DOW
+		summarizeBy: none
+		sourceColumn: D_DOW
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_MOY
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 28edd14f-41cc-4e0c-a07d-1ee87f196043
+		sourceLineageTag: D_MOY
+		summarizeBy: none
+		sourceColumn: D_MOY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_DOM
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: a5b2249e-531a-4d2f-b36c-6696e7ce9f6d
+		sourceLineageTag: D_DOM
+		summarizeBy: none
+		sourceColumn: D_DOM
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_QOY
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: b5a42fa2-8934-405f-a328-58917888e899
+		sourceLineageTag: D_QOY
+		summarizeBy: none
+		sourceColumn: D_QOY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_FY_YEAR
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 2077a1d9-93e5-49de-8d10-565de2fcce21
+		sourceLineageTag: D_FY_YEAR
+		summarizeBy: none
+		sourceColumn: D_FY_YEAR
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_FY_QUARTER_SEQ
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 3558f212-c909-4065-bde6-03cb75373514
+		sourceLineageTag: D_FY_QUARTER_SEQ
+		summarizeBy: none
+		sourceColumn: D_FY_QUARTER_SEQ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_FY_WEEK_SEQ
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: dbc5ff10-e83d-4b1a-9d50-4f791c207100
+		sourceLineageTag: D_FY_WEEK_SEQ
+		summarizeBy: none
+		sourceColumn: D_FY_WEEK_SEQ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_DAY_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1eb616b7-e80e-435e-a7d7-95d0c96efb35
+		sourceLineageTag: D_DAY_NAME
+		summarizeBy: none
+		sourceColumn: D_DAY_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_QUARTER_NAME
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: aac3647c-f61d-4ceb-835e-79b6af2b634f
+		sourceLineageTag: D_QUARTER_NAME
+		summarizeBy: none
+		sourceColumn: D_QUARTER_NAME
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_HOLIDAY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 7436a34f-fe21-43f3-862b-94842daa2def
+		sourceLineageTag: D_HOLIDAY
+		summarizeBy: none
+		sourceColumn: D_HOLIDAY
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_WEEKEND
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 0a651c44-c574-4738-bd2b-d2c46cb66c2c
+		sourceLineageTag: D_WEEKEND
+		summarizeBy: none
+		sourceColumn: D_WEEKEND
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_FOLLOWING_HOLIDAY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 64abf503-7280-452e-8131-6ba4494d66aa
+		sourceLineageTag: D_FOLLOWING_HOLIDAY
+		summarizeBy: none
+		sourceColumn: D_FOLLOWING_HOLIDAY
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_FIRST_DOM
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 0990533e-12f0-430f-8c41-f0871a483231
+		sourceLineageTag: D_FIRST_DOM
+		summarizeBy: none
+		sourceColumn: D_FIRST_DOM
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_LAST_DOM
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 39d8a572-3d82-4ecc-a611-ef3359ff82fc
+		sourceLineageTag: D_LAST_DOM
+		summarizeBy: none
+		sourceColumn: D_LAST_DOM
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_SAME_DAY_LY
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: b17d9a3e-0fa7-455d-88f3-80bea53e58dd
+		sourceLineageTag: D_SAME_DAY_LY
+		summarizeBy: none
+		sourceColumn: D_SAME_DAY_LY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_SAME_DAY_LQ
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 710c096e-dae5-4abe-947e-ed39f65ddd48
+		sourceLineageTag: D_SAME_DAY_LQ
+		summarizeBy: none
+		sourceColumn: D_SAME_DAY_LQ
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column D_CURRENT_DAY
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 4f18bdc4-51cd-42a9-b35a-00d78f00c138
+		sourceLineageTag: D_CURRENT_DAY
+		summarizeBy: none
+		sourceColumn: D_CURRENT_DAY
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_CURRENT_WEEK
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 72637caf-922c-4ecc-a4a2-158ea5c0fda4
+		sourceLineageTag: D_CURRENT_WEEK
+		summarizeBy: none
+		sourceColumn: D_CURRENT_WEEK
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_CURRENT_MONTH
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 49113031-00b8-4371-bdf4-4b06c7ed4ebe
+		sourceLineageTag: D_CURRENT_MONTH
+		summarizeBy: none
+		sourceColumn: D_CURRENT_MONTH
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_CURRENT_QUARTER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 654fedce-ac6c-4198-bc44-5dc805d70d73
+		sourceLineageTag: D_CURRENT_QUARTER
+		summarizeBy: none
+		sourceColumn: D_CURRENT_QUARTER
+
+		annotation SummarizationSetBy = Automatic
+
+	column D_CURRENT_YEAR
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: dfdbe5b1-fe92-4bb2-8ed5-e818645e429f
+		sourceLineageTag: D_CURRENT_YEAR
+		summarizeBy: none
+		sourceColumn: D_CURRENT_YEAR
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_date_dim = entity
+		mode: directLake
+		source
+			entityName: vw_date_dim
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

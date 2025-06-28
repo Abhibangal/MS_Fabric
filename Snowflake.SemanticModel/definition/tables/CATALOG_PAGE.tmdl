@@ -1,0 +1,113 @@
+table CATALOG_PAGE
+	lineageTag: fc82fb9e-a26a-4ba0-a117-113df67c9c5a
+	sourceLineageTag: [dbo].[CATALOG_PAGE]
+
+	column CP_CATALOG_PAGE_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 3e628a60-e7a4-45a0-84c4-e6e6623a2cdd
+		sourceLineageTag: CP_CATALOG_PAGE_SK
+		summarizeBy: sum
+		sourceColumn: CP_CATALOG_PAGE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CP_CATALOG_PAGE_ID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 3b9722ce-3604-459e-8ad1-f0cb154b1df2
+		sourceLineageTag: CP_CATALOG_PAGE_ID
+		summarizeBy: none
+		sourceColumn: CP_CATALOG_PAGE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column CP_START_DATE_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 14a8b982-969e-4e15-9b0d-6c49645382fa
+		sourceLineageTag: CP_START_DATE_SK
+		summarizeBy: sum
+		sourceColumn: CP_START_DATE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CP_END_DATE_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 901093ce-1de9-4a87-8abf-21071d4b3c19
+		sourceLineageTag: CP_END_DATE_SK
+		summarizeBy: sum
+		sourceColumn: CP_END_DATE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CP_DEPARTMENT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1eb58adb-117a-4718-bdd8-db9273774310
+		sourceLineageTag: CP_DEPARTMENT
+		summarizeBy: none
+		sourceColumn: CP_DEPARTMENT
+
+		annotation SummarizationSetBy = Automatic
+
+	column CP_CATALOG_NUMBER
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 2ccfa4e2-4490-4c56-a415-6f68e140fbd0
+		sourceLineageTag: CP_CATALOG_NUMBER
+		summarizeBy: sum
+		sourceColumn: CP_CATALOG_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CP_CATALOG_PAGE_NUMBER
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 56f654c3-6d71-4c0d-838e-dd252a37377b
+		sourceLineageTag: CP_CATALOG_PAGE_NUMBER
+		summarizeBy: sum
+		sourceColumn: CP_CATALOG_PAGE_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CP_DESCRIPTION
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 566a4c39-b950-480a-a576-b74294683a58
+		sourceLineageTag: CP_DESCRIPTION
+		summarizeBy: none
+		sourceColumn: CP_DESCRIPTION
+
+		annotation SummarizationSetBy = Automatic
+
+	column CP_TYPE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2d78f5c1-8f1d-4323-85fe-b23749be8337
+		sourceLineageTag: CP_TYPE
+		summarizeBy: none
+		sourceColumn: CP_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	partition CATALOG_PAGE = entity
+		mode: directLake
+		source
+			entityName: CATALOG_PAGE
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

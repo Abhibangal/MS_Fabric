@@ -1,0 +1,28 @@
+relationship 5d883a71-f8da-5553-a9b9-4d36b5303336
+	fromColumn: vw_catalog_sales.CS_BILL_CUSTOMER_SK
+	toColumn: vw_customer.C_CUSTOMER_SK
+
+relationship b0bd250b-e42c-01fb-15ff-d0d463802159
+	fromColumn: vw_catalog_sales.CS_SOLD_DATE_SK
+	toColumn: vw_date_dim.D_DATE_SK
+
+relationship 64733a55-ef63-7906-cdaa-7097b75db40f
+	fromColumn: vw_catalog_sales.CS_ITEM_SK
+	toColumn: vw_item.I_ITEM_SK
+
+relationship 980f68a9-0be9-7857-a7d3-85afbd1a87ac
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: vw_inventory.INV_ITEM_SK
+	toColumn: vw_item.I_ITEM_SK
+
+relationship 8162b6f6-3300-ee4e-e407-d1c0dc671bbb
+	crossFilteringBehavior: bothDirections
+	fromCardinality: one
+	fromColumn: vw_customer.C_CURRENT_ADDR_SK
+	toColumn: vw_customer_address.CA_ADDRESS_SK
+
+relationship b17609a8-3a2d-aff3-e937-3fdede5ed490
+	fromColumn: vw_catalog_sales.CS_SHIP_MODE_SK
+	toColumn: vw_ship_mode.SM_SHIP_MODE_SK
+

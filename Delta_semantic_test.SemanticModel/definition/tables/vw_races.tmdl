@@ -1,0 +1,89 @@
+table vw_races
+	lineageTag: 1f98eea4-9055-4bcd-9ec9-097499197b54
+	sourceLineageTag: [dbo].[vw_races]
+
+	column raceId
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: fafc0fe8-8f2f-451f-9f16-4fc0c0056409
+		sourceLineageTag: raceId
+		summarizeBy: count
+		sourceColumn: raceId
+
+		annotation SummarizationSetBy = Automatic
+
+	column year
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: f22375e8-78a7-461c-9a22-e7fcc13bd87c
+		sourceLineageTag: year
+		summarizeBy: sum
+		sourceColumn: year
+
+		annotation SummarizationSetBy = Automatic
+
+	column round
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: 499e10bb-4275-477e-bcca-014b87f1fbc0
+		sourceLineageTag: round
+		summarizeBy: sum
+		sourceColumn: round
+
+		annotation SummarizationSetBy = Automatic
+
+	column circuitId
+		dataType: int64
+		formatString: 0
+		sourceProviderType: int
+		lineageTag: b502c5bd-9e7a-4979-98c7-485749c812d1
+		sourceLineageTag: circuitId
+		summarizeBy: count
+		sourceColumn: circuitId
+
+		annotation SummarizationSetBy = Automatic
+
+	column name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 790f2b04-e53c-431d-9c22-8e1d2df1b217
+		sourceLineageTag: name
+		summarizeBy: none
+		sourceColumn: name
+
+		annotation SummarizationSetBy = Automatic
+
+	column Race_time
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 638fc1c8-f89a-4966-b109-b7eafecde47d
+		sourceLineageTag: Race_time
+		summarizeBy: none
+		sourceColumn: Race_time
+
+		annotation SummarizationSetBy = Automatic
+
+	column Ingestion_dt
+		dataType: dateTime
+		formatString: General Date
+		sourceProviderType: datetime2
+		lineageTag: 3fa69e0c-962e-4410-8b48-f29c2f66655f
+		sourceLineageTag: Ingestion_dt
+		summarizeBy: none
+		sourceColumn: Ingestion_dt
+
+		annotation SummarizationSetBy = Automatic
+
+	partition vw_races = entity
+		mode: directLake
+		source
+			entityName: vw_races
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

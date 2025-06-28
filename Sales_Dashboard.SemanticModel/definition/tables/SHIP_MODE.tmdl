@@ -1,0 +1,75 @@
+table SHIP_MODE
+	lineageTag: 6abad31f-8cab-4bfa-a981-bdf3da17aaf8
+	sourceLineageTag: [dbo].[SHIP_MODE]
+
+	column SM_SHIP_MODE_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 598d9984-f6ad-4176-b62f-bec8272335da
+		sourceLineageTag: SM_SHIP_MODE_SK
+		summarizeBy: none
+		sourceColumn: SM_SHIP_MODE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column SM_SHIP_MODE_ID
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: da2c8054-426f-48ac-95f8-f0ab5a188d0a
+		sourceLineageTag: SM_SHIP_MODE_ID
+		summarizeBy: none
+		sourceColumn: SM_SHIP_MODE_ID
+
+		annotation SummarizationSetBy = Automatic
+
+	column SM_TYPE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1210edcc-6f46-47a6-b67b-03a8ee2e1e50
+		sourceLineageTag: SM_TYPE
+		summarizeBy: none
+		sourceColumn: SM_TYPE
+
+		annotation SummarizationSetBy = Automatic
+
+	column SM_CODE
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2b0d1d01-63c0-4b4d-860d-301a1782c71f
+		sourceLineageTag: SM_CODE
+		summarizeBy: none
+		sourceColumn: SM_CODE
+
+		annotation SummarizationSetBy = Automatic
+
+	column SM_CARRIER
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: c98ac535-29aa-430b-91b6-11b5a3cc0a88
+		sourceLineageTag: SM_CARRIER
+		summarizeBy: none
+		sourceColumn: SM_CARRIER
+
+		annotation SummarizationSetBy = Automatic
+
+	column SM_CONTRACT
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 2dd2df0e-c32c-42ab-92f8-8c925111b20b
+		sourceLineageTag: SM_CONTRACT
+		summarizeBy: none
+		sourceColumn: SM_CONTRACT
+
+		annotation SummarizationSetBy = Automatic
+
+	partition SHIP_MODE = entity
+		mode: directLake
+		source
+			entityName: SHIP_MODE
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+

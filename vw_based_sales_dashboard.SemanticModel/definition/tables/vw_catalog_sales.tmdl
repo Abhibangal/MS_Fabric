@@ -1,0 +1,449 @@
+table vw_catalog_sales
+	lineageTag: 178cf8c1-c973-479b-9031-2e5b6d963151
+	sourceLineageTag: [dbo].[vw_catalog_sales]
+
+	column CS_SOLD_DATE_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 21ccf00d-0d30-4642-9bd9-99634c6780e0
+		sourceLineageTag: CS_SOLD_DATE_SK
+		summarizeBy: none
+		sourceColumn: CS_SOLD_DATE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_SOLD_TIME_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: cb8b0140-c7e0-4b9b-ac8f-182a5337de9c
+		sourceLineageTag: CS_SOLD_TIME_SK
+		summarizeBy: sum
+		sourceColumn: CS_SOLD_TIME_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_SHIP_DATE_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: f28b124b-1fa0-44dd-9174-9b69d000eb34
+		sourceLineageTag: CS_SHIP_DATE_SK
+		summarizeBy: sum
+		sourceColumn: CS_SHIP_DATE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_BILL_CUSTOMER_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: c182ece3-93ad-4f18-9a51-ddd293f2e86f
+		sourceLineageTag: CS_BILL_CUSTOMER_SK
+		summarizeBy: none
+		sourceColumn: CS_BILL_CUSTOMER_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_BILL_CDEMO_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 0382b622-3317-4dd3-9c7e-f5fce008bf66
+		sourceLineageTag: CS_BILL_CDEMO_SK
+		summarizeBy: sum
+		sourceColumn: CS_BILL_CDEMO_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_BILL_HDEMO_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 15760160-6eac-4e0b-95d0-460fa09ac39b
+		sourceLineageTag: CS_BILL_HDEMO_SK
+		summarizeBy: sum
+		sourceColumn: CS_BILL_HDEMO_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_BILL_ADDR_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: f4f9f803-38b5-4c2b-9af7-a0958db28e23
+		sourceLineageTag: CS_BILL_ADDR_SK
+		summarizeBy: sum
+		sourceColumn: CS_BILL_ADDR_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_SHIP_CUSTOMER_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: d2dc7ee8-1101-4325-b61e-cd2ef8c924db
+		sourceLineageTag: CS_SHIP_CUSTOMER_SK
+		summarizeBy: sum
+		sourceColumn: CS_SHIP_CUSTOMER_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_SHIP_CDEMO_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: a082fe61-edea-4892-b079-b0d0c95069ac
+		sourceLineageTag: CS_SHIP_CDEMO_SK
+		summarizeBy: sum
+		sourceColumn: CS_SHIP_CDEMO_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_SHIP_HDEMO_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 637c1bec-39f2-45da-8097-bf2941157093
+		sourceLineageTag: CS_SHIP_HDEMO_SK
+		summarizeBy: sum
+		sourceColumn: CS_SHIP_HDEMO_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_SHIP_ADDR_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 28744aba-604c-41f9-890e-2d800f67d4e4
+		sourceLineageTag: CS_SHIP_ADDR_SK
+		summarizeBy: sum
+		sourceColumn: CS_SHIP_ADDR_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_CALL_CENTER_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 9fc453fe-f228-43bc-92ab-2cf3c69bc051
+		sourceLineageTag: CS_CALL_CENTER_SK
+		summarizeBy: sum
+		sourceColumn: CS_CALL_CENTER_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_CATALOG_PAGE_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: e58714a6-90eb-4516-a8c1-5deea82bfdb5
+		sourceLineageTag: CS_CATALOG_PAGE_SK
+		summarizeBy: sum
+		sourceColumn: CS_CATALOG_PAGE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_SHIP_MODE_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 849e5307-b55a-46f4-a039-3b91fa9f4bf6
+		sourceLineageTag: CS_SHIP_MODE_SK
+		summarizeBy: none
+		sourceColumn: CS_SHIP_MODE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_WAREHOUSE_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 1b21bc04-e908-4828-9e5a-2a57b349d344
+		sourceLineageTag: CS_WAREHOUSE_SK
+		summarizeBy: sum
+		sourceColumn: CS_WAREHOUSE_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_ITEM_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 55028e22-ecbd-466a-8609-1067c88b44d2
+		sourceLineageTag: CS_ITEM_SK
+		summarizeBy: none
+		sourceColumn: CS_ITEM_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_PROMO_SK
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 8ffd4b7c-fe94-4d47-b3e7-41c1b32be6c0
+		sourceLineageTag: CS_PROMO_SK
+		summarizeBy: sum
+		sourceColumn: CS_PROMO_SK
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_ORDER_NUMBER
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: 10505c13-a4d4-487e-bc32-484c841b89ca
+		sourceLineageTag: CS_ORDER_NUMBER
+		summarizeBy: sum
+		sourceColumn: CS_ORDER_NUMBER
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_QUANTITY
+		dataType: double
+		sourceProviderType: decimal(38, 0)
+		lineageTag: e75275ab-35cc-456a-8e46-408172b04d16
+		sourceLineageTag: CS_QUANTITY
+		summarizeBy: sum
+		sourceColumn: CS_QUANTITY
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"isGeneralNumber":true}
+
+	column CS_WHOLESALE_COST
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: 73551f21-dc4e-49a7-8e1a-3c7ed4fddff0
+		sourceLineageTag: CS_WHOLESALE_COST
+		summarizeBy: sum
+		sourceColumn: CS_WHOLESALE_COST
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_LIST_PRICE
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: 43e6aaef-e3cd-477a-8f2c-02442d1bd28a
+		sourceLineageTag: CS_LIST_PRICE
+		summarizeBy: sum
+		sourceColumn: CS_LIST_PRICE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_SALES_PRICE
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: b98ae6ae-c564-406f-bc05-b0fa2744f5eb
+		sourceLineageTag: CS_SALES_PRICE
+		summarizeBy: sum
+		sourceColumn: CS_SALES_PRICE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_EXT_DISCOUNT_AMT
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: 73b85d99-7e7f-4d17-a20f-eb20f2b9a8f6
+		sourceLineageTag: CS_EXT_DISCOUNT_AMT
+		summarizeBy: sum
+		sourceColumn: CS_EXT_DISCOUNT_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_EXT_SALES_PRICE
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: 5032dc40-32c1-4634-9f26-4b87adbedb7b
+		sourceLineageTag: CS_EXT_SALES_PRICE
+		summarizeBy: sum
+		sourceColumn: CS_EXT_SALES_PRICE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_EXT_WHOLESALE_COST
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: a2b804f7-792a-4899-b392-9b508c45795d
+		sourceLineageTag: CS_EXT_WHOLESALE_COST
+		summarizeBy: sum
+		sourceColumn: CS_EXT_WHOLESALE_COST
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_EXT_LIST_PRICE
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: 45b2c48e-d368-4e29-a8c4-ccdbd6e640ed
+		sourceLineageTag: CS_EXT_LIST_PRICE
+		summarizeBy: sum
+		sourceColumn: CS_EXT_LIST_PRICE
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_EXT_TAX
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: c8c450a4-9578-4021-9d3c-bf36c58a69a5
+		sourceLineageTag: CS_EXT_TAX
+		summarizeBy: sum
+		sourceColumn: CS_EXT_TAX
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_COUPON_AMT
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: 54fe9baf-d06e-48c3-8588-75628add5327
+		sourceLineageTag: CS_COUPON_AMT
+		summarizeBy: sum
+		sourceColumn: CS_COUPON_AMT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_EXT_SHIP_COST
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: 779bfd44-1ee0-44f2-ae13-85a790f77541
+		sourceLineageTag: CS_EXT_SHIP_COST
+		summarizeBy: sum
+		sourceColumn: CS_EXT_SHIP_COST
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_NET_PAID
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: c8accb5f-3317-49fc-a504-ead260a54e5e
+		sourceLineageTag: CS_NET_PAID
+		summarizeBy: count
+		sourceColumn: CS_NET_PAID
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_NET_PAID_INC_TAX
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: 61446a72-d7d5-48e3-8324-7e9e598b8760
+		sourceLineageTag: CS_NET_PAID_INC_TAX
+		summarizeBy: sum
+		sourceColumn: CS_NET_PAID_INC_TAX
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_NET_PAID_INC_SHIP
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: f454aacb-b468-4185-bce1-244894386e79
+		sourceLineageTag: CS_NET_PAID_INC_SHIP
+		summarizeBy: sum
+		sourceColumn: CS_NET_PAID_INC_SHIP
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_NET_PAID_INC_SHIP_TAX
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: 537389f3-4f3e-4144-8abe-dc519a57e0b9
+		sourceLineageTag: CS_NET_PAID_INC_SHIP_TAX
+		summarizeBy: sum
+		sourceColumn: CS_NET_PAID_INC_SHIP_TAX
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column CS_NET_PROFIT
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(7, 2)
+		lineageTag: 99a64ddb-3721-4400-80f9-0bf4aca93b0c
+		sourceLineageTag: CS_NET_PROFIT
+		summarizeBy: sum
+		sourceColumn: CS_NET_PROFIT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	column ACTUAL_PROFIT
+		dataType: decimal
+		formatString: \$#,0.###############;(\$#,0.###############);\$#,0.###############
+		sourceProviderType: decimal(8, 2)
+		lineageTag: 198eab81-7e09-4c84-a5bc-2fafa160b641
+		sourceLineageTag: ACTUAL_PROFIT
+		summarizeBy: sum
+		sourceColumn: ACTUAL_PROFIT
+
+		annotation SummarizationSetBy = Automatic
+
+		annotation PBI_FormatHint = {"currencyCulture":"en-US"}
+
+	partition vw_catalog_sales = entity
+		mode: directLake
+		source
+			entityName: vw_catalog_sales
+			schemaName: dbo
+			expressionSource: DatabaseQuery
+
+	annotation PBI_ResultType = Table
+
