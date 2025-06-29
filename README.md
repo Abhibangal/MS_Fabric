@@ -1,6 +1,6 @@
 # Snowflake Managed Iceberg Table Integration with MS Fabric Lakehouse
 
-![Project Logo](logo/1716400527558.jpeg)
+![Project Logo](1716400527558.jpeg)
 
 ## Overview
 
