@@ -55,13 +55,13 @@
           "z": 1000.00
         },
         {
-          "config": "{\"name\":\"a6597975209655de6b14\",\"layouts\":[{\"id\":0,\"position\":{\"x\":984.9221183800622,\"y\":306.0436137071651,\"z\":3001,\"width\":260.18691588785043,\"height\":181.4330218068536,\"tabOrder\":3001}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTOMER.C_BIRTH_YEAR\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTOMER\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"C_BIRTH_YEAR\"},\"Name\":\"CUSTOMER.C_BIRTH_YEAR\",\"NativeReferenceName\":\"C_BIRTH_YEAR\"}]},\"drillFilterOtherVisuals\":true}}",
-          "filters": "[]",
+          "config": "{\"name\":\"a6597975209655de6b14\",\"layouts\":[{\"id\":0,\"position\":{\"x\":984.9221183800622,\"y\":306.0436137071651,\"z\":4000,\"width\":260.18691588785043,\"height\":181.4330218068536,\"tabOrder\":4000}}],\"singleVisual\":{\"visualType\":\"tableEx\",\"projections\":{\"Values\":[{\"queryRef\":\"CUSTOMER.C_BIRTH_YEAR\"}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"c\",\"Entity\":\"CUSTOMER\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"c\"}},\"Property\":\"C_BIRTH_YEAR\"},\"Name\":\"CUSTOMER.C_BIRTH_YEAR\",\"NativeReferenceName\":\"C_BIRTH_YEAR\"}]},\"drillFilterOtherVisuals\":true}}",
+          "filters": "[{\"name\":\"f0db933c6a632e56139e\",\"expression\":{\"Column\":{\"Expression\":{\"SourceRef\":{\"Entity\":\"DATE_DIM\"}},\"Property\":\"D_CURRENT_DAY\"}},\"type\":\"Categorical\",\"howCreated\":1}]",
           "height": 181.43,
           "width": 260.19,
           "x": 984.92,
           "y": 306.04,
-          "z": 3001.00
+          "z": 4000.00
         },
         {
           "config": "{\"name\":\"e0429590c401b2d0aae1\",\"layouts\":[{\"id\":0,\"position\":{\"x\":984.8015122873346,\"y\":0,\"z\":2000,\"width\":260.11342155009453,\"height\":73.79962192816636,\"tabOrder\":2000}}],\"singleVisual\":{\"visualType\":\"slicer\",\"projections\":{\"Values\":[{\"queryRef\":\"DATE_DIM.D_YEAR\",\"active\":true}]},\"prototypeQuery\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DATE_DIM\",\"Type\":0}],\"Select\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"D_YEAR\"},\"Name\":\"DATE_DIM.D_YEAR\",\"NativeReferenceName\":\"D_YEAR\"}]},\"drillFilterOtherVisuals\":true,\"objects\":{\"data\":[{\"properties\":{\"mode\":{\"expr\":{\"Literal\":{\"Value\":\"'Dropdown'\"}}}}}],\"general\":[{\"properties\":{\"orientation\":{\"expr\":{\"Literal\":{\"Value\":\"0D\"}}},\"filter\":{\"filter\":{\"Version\":2,\"From\":[{\"Name\":\"d\",\"Entity\":\"DATE_DIM\",\"Type\":0}],\"Where\":[{\"Condition\":{\"In\":{\"Expressions\":[{\"Column\":{\"Expression\":{\"SourceRef\":{\"Source\":\"d\"}},\"Property\":\"D_YEAR\"}}],\"Values\":[[{\"Literal\":{\"Value\":\"1999L\"}}],[{\"Literal\":{\"Value\":\"1998L\"}}]]}}}]}}}}],\"selection\":[{\"properties\":{\"singleSelect\":{\"expr\":{\"Literal\":{\"Value\":\"false\"}}}}}]}}}",
