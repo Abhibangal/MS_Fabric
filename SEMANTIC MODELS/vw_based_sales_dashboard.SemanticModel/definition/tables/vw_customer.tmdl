@@ -200,6 +200,16 @@ table vw_customer
 
 		annotation SummarizationSetBy = Automatic
 
+	column Full_Name
+		dataType: string
+		sourceProviderType: varchar(8000)
+		lineageTag: 1dc1ced8-c18d-4ecc-ba0c-afde909036ce
+		sourceLineageTag: Full_Name
+		summarizeBy: none
+		sourceColumn: Full_Name
+
+		annotation SummarizationSetBy = Automatic
+
 	partition vw_customer = entity
 		mode: directLake
 		source

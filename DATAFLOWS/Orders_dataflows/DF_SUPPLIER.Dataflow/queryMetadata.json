@@ -1,0 +1,41 @@
+{
+  "formatVersion": "202502",
+  "computeEngineSettings": {},
+  "name": "DF_SUPPLIER",
+  "queryGroups": [],
+  "documentLocale": "en-GB",
+  "queriesMetadata": {
+    "SUPPLIER": {
+      "queryId": "450d4eef-c77d-45b5-a795-b633ba304d6f",
+      "queryName": "SUPPLIER"
+    },
+    "p_compute": {
+      "queryId": "8eee095d-af18-4eb7-b745-7ff60a436972",
+      "queryName": "p_compute",
+      "loadEnabled": false
+    },
+    "p_database": {
+      "queryId": "6790dd2a-17c8-433a-ba46-859d79d77ef8",
+      "queryName": "p_database",
+      "loadEnabled": false
+    },
+    "SUPPLIER_DataDestination": {
+      "queryId": "68ff4004-a337-404e-8ad5-d931d4b6b728",
+      "queryName": "SUPPLIER_DataDestination",
+      "isHidden": true,
+      "loadEnabled": false
+    }
+  },
+  "connections": [
+    {
+      "path": "rbipgdv-nf45419.snowflakecomputing.com;COMPUTE_WH",
+      "kind": "Snowflake",
+      "connectionId": "{\"ClusterId\":\"77e47124-7474-4fe8-8f31-8604a39397f5\",\"DatasourceId\":\"1596ef02-3e25-4289-ada4-9a067de07848\"}"
+    },
+    {
+      "path": "Warehouse",
+      "kind": "Warehouse",
+      "connectionId": "{\"ClusterId\":\"77e47124-7474-4fe8-8f31-8604a39397f5\",\"DatasourceId\":\"df4bd69a-360b-4de1-bc02-cee3a65f738b\"}"
+    }
+  ]
+}

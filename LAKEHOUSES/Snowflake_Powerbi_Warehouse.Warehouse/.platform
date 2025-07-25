@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Warehouse",
+    "displayName": "Snowflake_Powerbi_Warehouse"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "3e216515-026b-ae04-4a94-661e996e4485"
+  }
+}
